@@ -1,9 +1,0 @@
-Package: r-pcap
-Type: Package
-Title: A package to process network packet header files
-Version: 1.0
-Date: 2016-01-21
-Author: Denis Hock
-Maintainer: <dehock@fb2.fra-uas.de>
-Description: Contains example traces and functions to get most important statistics
-License: GPL 3.0
