@@ -17,4 +17,7 @@ You can directly install the package from github as follows:
  > install.packages('devtools')
  > library(devtools)
  > install_github('fg-netzwerksicherheit/rpcap', subdir='rpcap')
+ > library(rpcap)
+ > data(packetHeader)
+ > ...
 ```
