@@ -10,6 +10,7 @@ unexpected data. If you need to process big amounts of data, we recommend to use
 as snowfall in addition.
 
 You can directly install the package from github as follows:
+
 apt-get install libssl-dev r-base-dev curl libcurl4-openssl-dev
 
 R
