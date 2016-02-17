@@ -1,0 +1,11 @@
+Package: rpcap
+Type: Package
+Title: A package to process network packet header data
+Version: 1.0
+Date: 2016-01-21
+Author: Denis Hock
+Maintainer: Denis Hock <dehock@fb2.fra-uas.de>
+Description: The package rpcap contains example traces of network traffic extracted from the DARPA Intrusion Detection Evaluation Data Set and a set of functions to easily generate statistics to interpret and analyze packet header data.
+URL: https://github.com/fg-netzwerksicherheit/
+Copyright: (c) 2016 Frankfurt University of Applied Sciences
+License: GPL-3
