@@ -1,0 +1,7 @@
+Package: rpcap
+Version: 1.0
+Depends: R (>= 2.10)
+License: GPL-3
+MD5sum: 2513f24736368575a7d7d758f39d768a
+NeedsCompilation: no
+
