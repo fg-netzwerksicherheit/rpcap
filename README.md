@@ -21,3 +21,31 @@ You can directly install the package from github as follows:
  > data(packetHeader)
  > ...
 ```
+
+# Example:
+```
+#Read data
+df <- readPcapCsv('/home/xbadc0ffee/network_traffic.csv')
+
+#Calculate min, max and mean for all packets
+stats.framelen <- stats(df$frame.len)
+
+#Calculate number of all packets per minute
+aggregatePerTimeUnit(df$ip.proto, df$frame.time, unit='min')
+
+#Calculate mean size of TCP packets per second
+data(protocol)
+is.TCP <- data[,]$ip.proto==protocolNameToNumber(c('tcp'))[1]
+aggregatePerTimeUnit(df$frame.len, df$frame.time, filter=is.TCP, FUN=mean)
+
+#Get number of packets per ip.dst
+frequencyPerValue(df$ip.dst) 
+
+#Calculate the number of occurences of each Layer 4 protocol
+stats.packetsPerProto <- frequencyPerValue(df$ip.proto)
+stats.packetsPerProto[1] <- protocolNumberToName(stats.packetsPerProto[1])
+
+#Get the service name of port 80
+data(port)
+portNumberToName(80) 
+```
